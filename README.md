@@ -56,4 +56,12 @@ sudo systemctl enable sonarqube
 sudo systemctl start sonarqube
 sudo systemctl status sonarqube
 
+sudo apt install docker.io
+
+sudo su - 
+usermod -aG docker jenkins
+usermod -aG docker ubuntu
+systemctl restart docker
+
+then restart jenkins
 
